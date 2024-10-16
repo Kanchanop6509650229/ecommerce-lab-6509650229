@@ -1,6 +1,26 @@
+PASS __tests__/products.test.js
+  GET /products
+    √ should return the all products(Currently 2 products) (18 ms)
+  GET /products/:id
+    √ should return a product by ID (3 ms)
+    √ should return 404 if product not found (3 ms)
+  POST /products
+    √ should add a new product (13 ms)
+  PUT /products/:id
+    √ should update an existing product (6 ms)
+    √ should return 404 if product not found (2 ms)
+  DELETE /products/:id
+    √ should delete a product (5 ms)
+    √ should return 404 if product not found (5 ms)
+
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ----------|---------|----------|---------|---------|-------------------
 All files |     100 |      100 |     100 |     100 |                   
  app.js   |     100 |      100 |     100 |     100 |                   
 ----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        0.505 s, estimated 1 s
+Ran all test suites.
